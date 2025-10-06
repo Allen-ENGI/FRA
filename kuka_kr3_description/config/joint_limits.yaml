@@ -1,0 +1,8 @@
+# Basic joint limits for a simplified KR3 (approximate). Units: radians and rad/s
+joint_limits:
+  joint_1: { has_velocity_limits: true, max_velocity: 2.62, has_position_limits: true, min_position: -3.14, max_position: 3.14 }
+  joint_2: { has_velocity_limits: true, max_velocity: 2.62, has_position_limits: true, min_position: -2.27, max_position: 2.27 }
+  joint_3: { has_velocity_limits: true, max_velocity: 2.62, has_position_limits: true, min_position: -2.44, max_position: 2.44 }
+  joint_4: { has_velocity_limits: true, max_velocity: 4.36, has_position_limits: true, min_position: -3.14, max_position: 3.14 }
+  joint_5: { has_velocity_limits: true, max_velocity: 4.36, has_position_limits: true, min_position: -2.09, max_position: 2.09 }
+  joint_6: { has_velocity_limits: true, max_velocity: 6.28, has_position_limits: true, min_position: -3.14, max_position: 3.14 }
