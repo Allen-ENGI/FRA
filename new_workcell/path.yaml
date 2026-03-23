@@ -1,0 +1,79 @@
+# Simplified Mission Configuration
+# Planning parameters are defined in code via profiles: fast, balanced, optimal, precision
+# Only essential motion parameters in YAML
+
+mission:
+  # ========================================
+  # STEP 1: Move to home position
+  # ========================================
+  - name: "Move to home"
+    type: joint
+    values: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    velocity_scaling: 0.008
+    acceleration_scaling: 0.01
+
+  # - name: "Camera down position"
+  #   type: joint
+  #   values: [0.0, -0.01, 1.4, 0.0, 1.54, 0.0]
+
+  # - name: "Navigate to target pose"
+  #   type: pose_target
+  #   values: [0.58, 0.0, 0.24, 0.0, 1.57, 3.14]  # x,y,z,qx,qy,qz,qw -- pointing down
+  #   velocity_scaling: 0.008
+  #   acceleration_scaling: 0.01
+
+  - name: "Navigate to target pose down"
+    type: pose_target
+    values: [0.6, 0.4, 0.35, 0.0, 3.14, 3.14]  # x,y,z,qx,qy,qz,qw -- pointing forwad
+    velocity_scaling: 0.008
+    acceleration_scaling: 0.01
+
+  - name: "Navigate to target pose down"
+    type: pose_target
+    values: [0.7, 0.15, 0.3, 0.0, 3.14, 3.14]  # x,y,z,qx,qy,qz,qw -- pointing forwad
+    velocity_scaling: 0.008
+    acceleration_scaling: 0.01
+
+  - name: "Navigate to target pose down"
+    type: pose_target
+    values: [0.6, 0.4, 0.35, 0.0, 3.14, 3.14]  # x,y,z,qx,qy,qz,qw -- pointing forwad
+    velocity_scaling: 0.008
+    acceleration_scaling: 0.01
+
+
+  - name: "Navigate to target pose up"
+    type: pose_target
+    values: [0.55, -0.2, 0.7, 0.0, 3.14, 3.14]  # x,y,z,qx,qy,qz,qw -- pointing forwad
+    velocity_scaling: 0.008
+    acceleration_scaling: 0.01
+
+
+  # ========================================
+  # - name: "Risky_Long_Move"
+  #   type: cartesian_relative
+  #   values: [0.0, 0.0, -0.1]  # 20cm single jump - will likely fail!
+  #   cartesian_step_size: 0.00005
+  #   velocity_scaling: 0.008
+
+
+  # - name: "Risky_Long_Move"
+  #   type: cartesian_relative
+  #   values: [0.0, 0.0, 0.1]  # 20cm single jump - will likely fail!
+  #   cartesian_step_size: 0.00005
+  #   velocity_scaling: 0.008
+
+
+  # - name: "Navigate to target pose"
+  #   type: pose_target
+  #   values: [0.6, 0.2, 0.4, 3.14, 0.0, 0.0]  # x,y,z,qx,qy,qz,qw
+  #   velocity_scaling: 0.1
+  #   acceleration_scaling: 0.1
+
+  # ========================================
+  # STEP 8: Return home
+  # ========================================
+  - name: "Return home"
+    type: joint
+    values: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    velocity_scaling: 0.008
+    acceleration_scaling: 0.01

@@ -1,0 +1,55 @@
+obstacles:
+  - id: "workbench_surface"
+    type: "box"
+    frame: "world"
+    dimensions: [1.5, 1.5, 0.02]  # length, width, height
+    position:
+      x: 0.3
+      y: 0.0
+      z: -0.03
+    orientation:
+      roll: 0.0
+      pitch: 0.0
+      yaw: 0.0
+
+  - id: "lab_wall"
+    type: "box"
+    frame: "world"
+    dimensions: [0.01, 2.0, 1.5]  # Thin wall
+    position:
+      x: 0.0
+      y: -0.36
+      z: 0.75
+    orientation:
+      roll: 0.0
+      pitch: 0.0
+      yaw: 1.57
+
+  # - id: "Calibration_Fixture"
+  #   type: "urdf"
+  #   frame: "world"
+  #   urdf_file: "package://calibration_fixture_description/urdf/frame.xacro"
+  #   urdf_package: "calibration_fixture_description"
+  #   position:
+  #     x: 0.9
+  #     y: 0.3
+  #     z: 0.0
+  #   orientation:
+  #     roll: 1.57
+  #     pitch: 0.0
+  #     yaw: -1.57
+
+
+  - id: "c"
+    type: "urdf"
+    frame: "world"
+    urdf_file: "package://calibration_fixture_description/urdf/frame.xacro"
+    urdf_package: "calibration_fixture_description"
+    position:
+      x: 0.6
+      y: -0.3
+      z: 0.0
+    orientation:
+      roll: 1.57
+      pitch: 0.0
+      yaw: 1.57
