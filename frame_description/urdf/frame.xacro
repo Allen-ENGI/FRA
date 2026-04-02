@@ -6,9 +6,9 @@
 <xacro:include filename="$(find frame_description)/urdf/frame.gazebo" />
 <link name="base_link">
   <inertial>
-    <origin xyz="0.18434667454160375 0.2995677116810486 0.20000000000000004" rpy="0 0 0"/>
-    <mass value="5.258658040215837"/>
-    <inertia ixx="0.393335" iyy="0.252305" izz="0.524098" ixy="0.000263" iyz="-0.0" ixz="0.0"/>
+    <origin xyz="-6.087905556432197e-16 -0.11865332545839843 0.3025677116810472" rpy="0 0 0"/>
+    <mass value="5.258658040215876"/>
+    <inertia ixx="0.524098" iyy="0.393335" izz="0.252305" ixy="-0.0" iyz="0.000263" ixz="-0.0"/>
   </inertial>
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
